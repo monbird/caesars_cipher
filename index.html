@@ -6,6 +6,24 @@
         <link rel="icon" type="image/png" href="./favicon.ico">
     </head>
     <body>
-        
+        <div id="content-box">
+            <h1>Caesars Cipher Encryption</h1>
+            <div class="input-group">
+                <label for="input">PLAINTEXT:</label>
+                <textarea id="input" required placeholder="hello world..."></textarea>
+            </div>
+            <div class="button-group">
+                <button id="decode" type="button">DECODE</button>
+                <button id="encode" type="button">ENCODE</button>
+                <div id="shift-by-group">
+                    <label for="shift-by">SHIFT BY:</label>
+                    <input id="shift-by" placeholder="e.g. 6" required></input>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="output">CIPHERTEXT:</label>
+                <textarea id="output" placeholder="nkrru cuxrj..."></textarea>
+            </div>
+        </div>
     </body>
 </html>
