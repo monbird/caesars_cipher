@@ -1,4 +1,87 @@
-body {
-    background-image: url("./background_img2.jpg");
+@import url('https://fonts.googleapis.com/css?family=Monoton|Roboto+Mono&display=swap');
 
+body {
+    background: rgba(34,193,195,1);   /* fallback background colour */
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+#content-box {
+    margin: 15% auto;
+}
+
+.input-group {
+    display: inline-block;
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+
+.input-group > * {
+    display: block;
+    margin: 20px auto;
+}
+
+textarea {
+    height: 150px;
+    width: 300px;
+    border: solid 2px black;
+    outline: none;
+}
+
+button {
+    font-size: 15px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+.buttons {
+    margin: 8px auto;
+}
+
+.fas {
+    font-size: 20px;
+}
+
+#shift-by {
+    width: 70px;
+    height: 20px;
+    border: solid 1px black;
+}
+
+#shift-label, #encode, #decode {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#plaintext-label, #ciphertext-label {
+    font-size: 25px;
+}
+
+#plaintext, #ciphertext {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
 }

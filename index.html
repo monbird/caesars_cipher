@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Caesars Cipher - ROT13</title>
+        <title>Caesar Cipher</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <link rel="icon" type="image/png" href="./favicon.ico">
+        <link rel="icon" type="image/png" href="./favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="./logic.js"></script>
     </head>
     <body>
         <div id="content-box">
-            <h1>Caesars Cipher Encryption</h1>
+            <h1>Caesar &nbsp;Cipher &nbsp;Encryption</h1>
             <div class="input-group">
-                <label for="input">PLAINTEXT:</label>
-                <textarea id="input" required placeholder="hello world..."></textarea>
+                <label id="plaintext-label" for="plaintext">PLAINTEXT:</label>
+                <textarea id="plaintext" required placeholder="hello world..."></textarea>
             </div>
-            <div class="button-group">
-                <button id="decode" type="button">DECODE</button>
-                <button id="encode" type="button">ENCODE</button>
+            <div class="input-group">
                 <div id="shift-by-group">
-                    <label for="shift-by">SHIFT BY:</label>
-                    <input id="shift-by" placeholder="e.g. 6" required></input>
+                    <label id="shift-label" for="shift-by">SHIFT BY:</label>
+                    <input id="shift-by" placeholder="e.g. 13" required></input>
                 </div>
+                <div class="buttons">
+                    <i class="fas fa-arrow-left"></i>&nbsp;&nbsp;
+                    <button id="decode" type="button">DECODE</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="buttons">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="encode" type="button">ENCODE</button>&nbsp;&nbsp;
+                    <i class="fas fa-arrow-right"></i>
+                </div>  
             </div>
             <div class="input-group">
-                <label for="output">CIPHERTEXT:</label>
-                <textarea id="output" placeholder="nkrru cuxrj..."></textarea>
+                <label id="ciphertext-label" for="ciphertext">CIPHERTEXT:</label>
+                <textarea id="ciphertext" placeholder="uryyb jbeyq..."></textarea>
             </div>
         </div>
     </body>
